@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>survey.js | example</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+<form action="" id="survey">
+    <label for="question-1">Do like Magic?</label>
+    <input id="question-1" name="question-1" type="checkbox">
+    <label for="question-2">Are we having fun yet?</label>
+    <input id="question-2" name="question-2" type="checkbox">
+    <label for="question-3">Do you want to see pictures of little kittens?</label>
+    <input id="question-3" name="question-3" type="checkbox">
+</form>
+
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="survey.js"></script>
+<script>
+    $(function() {
+        $('#survey').survey()
+    })
+</script>
+</body>
+</html>

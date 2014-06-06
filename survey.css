@@ -1,0 +1,98 @@
+.survey-wrapper {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.survey-wrapper .survey-container {
+    position: relative;
+}
+
+.survey-wrapper .question {
+    font: normal 200 52px/1em "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    height: 104px;
+    overflow: visible;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transition: all 0.5s, color 0.2s;
+    -moz-transition: all 0.5s, color 0.2s;
+    -ms-transition: all 0.5s, color 0.2s;
+    -o-transition: all 0.5s, color 0.2s;
+    transition: all 0.5s, color 0.2s;
+}
+
+.survey-wrapper .question.active {
+    font-size: 36px;
+}
+
+.survey-wrapper .question.next {
+    left: 100%;
+    opacity: 0;
+}
+
+.survey-wrapper .question.down {
+    color: red;
+    top: 100%;
+    opacity: 0;
+}
+
+.survey-wrapper .question.up {
+    color: green;
+    top: -100%;
+    opacity: 0;
+}
+
+.survey-wrapper .key {
+    font: normal 100 30px/32px "Helvetica Neue", Helvetica, sans-serif;
+    margin: 15px;
+    vertical-align: bottom;
+}
+
+.survey-wrapper .key.up {
+    color: green;
+}
+
+.survey-wrapper .key.down {
+    color: red;
+}
+
+.survey-wrapper .key:before {
+    color: #999;
+    margin-right: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.survey-wrapper .key.up:before {
+    content: '\2191';
+}
+
+.survey-wrapper .key.down:before {
+    content: '\2193';
+}
+
+.survey-wrapper .info {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
